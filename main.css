@@ -4,6 +4,35 @@
     --black: #000000;
     --Grey:  #cbd2cb;
 }
+* {
+    box-sizing: border-box;
+}
+.columnList {
+    column-count: 1;
+    column-width: 33%;
+    column-gap: 30px;
+    column-rule-style: solid;
+    column-fill: balance;
+ }
+h2 {
+    column-span: all;
+ }
+ul {
+    margin-top: 0px;
+}
+
+@media screen and (min-width: 380px) {
+    .columnList {
+        column-count: 2;
+    }
+}
+
+@media screen and (min-width: 850px) {
+    .columnList {
+        column-count: 3;
+    }
+}
+
 .light-theme {
     --bg: var(--Grey);
     --fontColor: var(--black);
