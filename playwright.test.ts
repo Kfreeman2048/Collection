@@ -41,7 +41,7 @@ test('render responsive design for mobile', async ({ page }) => {
   await expect(columnNumber).toBe("1");
 });
 
-test.only('displays input from form', async ({ page }) => {
+test('displays input from form', async ({ page }) => {
   await page.goto('file:///C:/Users/kitha/code/website/index.html');
 
   await page.locator(`input[name = "textInput"]`).fill('wafflecones');
