@@ -47,8 +47,9 @@
     <form>
     <label for="textInput">Input:</label>
     <input type="text" id="textInput" name="textInput" placeholder="Input text here." maxlength="126" size="30">
-    <button name="submitButton" type="button" onclick="x.value=textInput.value">Submit</button>
+    <button name="submitButton" type="button" onclick="x.value=vowelCheck(textInput.value)">Submit</button>
     <br>
+    <label for ="x">Input has vowels:</label>
     <output name="x" id="x" value=""></output>
     </form>
 

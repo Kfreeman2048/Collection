@@ -14,3 +14,16 @@ switcher.addEventListener('click', function() {
 
     console.log('current class name: ' +className);
 });
+
+function vowelCheck(str) {
+    let hasVowel = false;
+    const vowels = ['a', 'e', 'i', 'o', 'u'];
+    for (let char of str) {
+        if (vowels.includes(char)) {
+            if (hasVowel === false) {
+                hasVowel = true;
+            };
+        };
+    };
+    return hasVowel;
+};

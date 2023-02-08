@@ -41,11 +41,16 @@ test('render responsive design for mobile', async ({ page }) => {
   await expect(columnNumber).toBe("1");
 });
 
-test('displays input from form', async ({ page }) => {
+test('returns if string has vowels', async ({ page }) => {
   await page.goto('file:///C:/Users/kitha/code/Practice-Website/index.html');
 
   await page.locator(`input[name = "textInput"]`).fill('wafflecones');
   await page.locator(`button[name = "submitButton"]`).click();
 
-  await expect(await page.locator(`output[id = "x"]`)).toHaveText('wafflecones');
+  await expect(await page.locator(`output[id = "x"]`)).toContainText('true');
+
+  await page.locator(`input[name = "textInput"]`).fill('hccdf');
+  await page.locator(`button[name = "submitButton"]`).click();
+
+  await expect(await page.locator(`output[id = "x"]`)).toContainText('false');
 });
