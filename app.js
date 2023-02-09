@@ -27,3 +27,12 @@ function vowelCheck(str) {
     };
     return hasVowel;
 };
+
+var inputField = document.getElementById("textInput");
+
+inputField.addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        document.getElementById("submitButton").click();
+        };
+});
