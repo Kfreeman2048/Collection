@@ -1,57 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Website</title>
-     <link rel="stylesheet" href="main.css">
-     <script src="app.js" defer></script>
-</head>
-<body class = "light-theme">
-   
-    <noscript>You need to enable JavaScript to view the full site.</noscript>
-    <h1>Columns</h1>
-    <div class="columnList">
-        <h2>Columntest</h2>
-            <ul>
-                <li class="list">Column 1 item 1</li>
-                <li class="list">Column 1 item 2</li>
-                <li class="list">Column 1 item 3</li>
-                <li class="list">Column 1 item 4</li>
-                <li class="list">Column 1 item 5</li>
-                <li class="list">Column 1 item 6</li>
-            </ul>
-            <ul>
-                <li class="list">Column 2 item 1</li>
-                <li class="list">Column 2 item 2</li>
-                <li class="list">Column 2 item 3</li>
-                <li class="list">Column 2 item 4</li>
-                <li class="list">Column 2 item 5</li>
-                <li class="list">Column 2 item 6</li>
-            </ul>
-            <ul>
-                <li class="list">Column 3 item 1</li>
-                <li class="list">Column 3 item 2</li>
-                <li class="list">Column 3 item 3</li>
-                <li class="list">Column 3 item 4</li>
-                <li class="list">Column 3 item 5</li>
-                <li class="list">Column 3 item 6</li>
-            </ul>
-    </div>
-    <div>
-        <button id="themeChange" class="btn">Dark</button>
-    </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Simple Website</title>
+        <link rel="stylesheet" href="main.css">
+        <script src="app.js" defer></script>
+    </head>
+    <body class = "light-theme">
+        <noscript>You need to enable JavaScript to view the full site.</noscript>
+        <h1>Columns</h1>
+        <div class="columnList">
+            <h2>Columntest</h2>
+                <ul>
+                    <li class="list">Column 1 item 1</li>
+                    <li class="list">Column 1 item 2</li>
+                    <li class="list">Column 1 item 3</li>
+                    <li class="list">Column 1 item 4</li>
+                    <li class="list">Column 1 item 5</li>
+                    <li class="list">Column 1 item 6</li>
+                </ul>
+                <ul>
+                    <li class="list">Column 2 item 1</li>
+                    <li class="list">Column 2 item 2</li>
+                    <li class="list">Column 2 item 3</li>
+                    <li class="list">Column 2 item 4</li>
+                    <li class="list">Column 2 item 5</li>
+                    <li class="list">Column 2 item 6</li>
+                </ul>
+                <ul>
+                    <li class="list">Column 3 item 1</li>
+                    <li class="list">Column 3 item 2</li>
+                    <li class="list">Column 3 item 3</li>
+                    <li class="list">Column 3 item 4</li>
+                    <li class="list">Column 3 item 5</li>
+                    <li class="list">Column 3 item 6</li>
+                </ul>
+        </div>
+        <div>
+            <button id="themeChange" class="btn">Dark</button>
+        </div>
 
+        <form>
+            <label for="textInput">Input:</label>
+            <input type="text" id="textInput" name="textInput" placeholder="Input text here." maxlength="126" size="30">
+            <button name="submitButton" id="submitButton" type="button" onclick="x.value=vowelCheck(textInput.value)">Submit</button>
+            <br>
+            <label for ="x">Input has vowels:</label>
+            <output name="x" id="x" value=""></output>
+        </form>
 
-    <form>
-    <label for="textInput">Input:</label>
-    <input type="text" id="textInput" name="textInput" placeholder="Input text here." maxlength="126" size="30">
-    <button name="submitButton" id="submitButton" type="button" onclick="x.value=vowelCheck(textInput.value)">Submit</button>
-    <br>
-    <label for ="x">Input has vowels:</label>
-    <output name="x" id="x" value=""></output>
-    </form>
-
-</body>
+    </body>
 </html>
