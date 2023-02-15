@@ -13,7 +13,6 @@ test.describe('window size tests', () => {
     });
 
     await expect(columnNumber).toBe("2");
-
   });
 
   test('render responsive design for mobile', async ({ page }) => {
@@ -28,12 +27,16 @@ test.describe('window size tests', () => {
 
     await expect(columnNumber).toBe("1");
   });
-
 });
 
 test.describe('page functionality tests', () => {
-  test('changes theme', async ({ page }) => {
+
+  test.beforeEach(async ({ page }, testInfo) => {
+    console.log(`Running ${testInfo.title}`);
     await page.goto('file:///C:/Users/kitha/code/Practice-Website/index.html');
+  });
+
+  test('changes theme', async ({ page }) => {
     const button = page.locator(`button[id = 'themeChange']`);
 
     await button.click();
@@ -46,8 +49,6 @@ test.describe('page functionality tests', () => {
   });
 
   test('returns if string has vowels', async ({ page }) => {
-    await page.goto('file:///C:/Users/kitha/code/Practice-Website/index.html');
-
     await page.locator(`input[name = "textInput"]`).fill('wafflecones');
     await page.keyboard.press('Enter');
 
