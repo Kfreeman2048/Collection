@@ -72,3 +72,7 @@ li {
     color: var(--btnFc);
     background-color: var(--btnBg);
 }
+
+ul li:first-child{
+    font-weight: bold;
+}
